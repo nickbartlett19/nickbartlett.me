@@ -1,0 +1,53 @@
+body {
+    background-color: #cfcfcc;
+    text-align: center;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    display: inline;
+    padding: 5px;
+    margin: 4px 2px 12px 2px;
+}
+
+.nav {
+    display: flex;
+    background-color: white;
+    margin: 4px 2px 4px 2px;
+}
+
+.nav-item {
+    padding: 2px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.page {
+    display: flex;
+    margin: 4px 2px 4px 2px;
+
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 4px;
+    padding: 5px;
+    width: 30%;
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    flex: 1 0 auto;
+    width: 70%;
+    padding: 5px;
+
+}
