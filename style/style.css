@@ -1,39 +1,56 @@
-main, header, section, aside, footer {
+header, section, aside, footer {
     margin: 0;
     padding: 20px;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    
+}
+
+header, footer {
     color: #ffffff;
 }
 
-main {
-    background: #000000;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .header {
-    background: #03a9f4;
+    background: #112d4e;
 }
 
 .hero {
-    background: #d22b1f;
+    background: #dbe2ef;
+    border-radius: 0px 0px 50px 50px;
 }
 
 .content {
     background: #129a22;
     flex: 1;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .sidebar {
     background: #673ab7;
     border: 1px solid #000000;
     flex: 0 1 300px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .footer {
-    background: #616161;
-    border: 1px solid #000000;
+    background: #112d4e;
+    /* border: 1px solid #000000; */
+}
+
+.hero-wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 75rem;
 }
 
 @media screen and (min-width: 640px) {

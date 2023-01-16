@@ -1,16 +1,21 @@
 <!--
     ToDo:
-    1)
-
+    1) Fix downloading my resume as pdf on mobile ... make into webpage format for
+    for mobile only?
+    2) Slim code
+    
     Ideas:
     - Animation on nav buttons?
 -->
 
 
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="The personal website of Nick Bartlett, a software developer based in Concord, Massachusetts.">
+        <meta name="author" content="Nick Bartlett">
         <title>nickbartlett.me</title>
         <link rel="stylesheet" href="style/style.css">
     </head>
@@ -24,11 +29,10 @@
         <!-- Main -->
         <main>
 
-            Main
 
             <!-- Header -->
             <header class = "header">
-                Header
+                Nick Bartlett
                 <nav>
                     <a href = "resume/current.pdf">Resume</a>
                     <a href = "https://github.com/nickbartlett19">Github</a>
@@ -38,13 +42,13 @@
             </header>
 
             <!-- About (Hero) -->
-            <section class = "hero">
+            <section class = "hero hero-wrapper">
                 Hero
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nisl laoreet, scelerisque nisl nec, ullamcorper libero. Praesent in accumsan dolor. Integer gravida feugiat nisi id gravida. Integer sed nunc eget est eleifend auctor. Maecenas et nisi ac tortor volutpat fermentum. Nullam at tellus non massa tempor scelerisque. Aliquam sit amet venenatis lectus, in volutpat risus. Curabitur lobortis mollis libero eu vehicula. Etiam congue eget est sit amet suscipit. Sed gravida diam sit amet odio volutpat, nec vehicula dui aliquam. Etiam ut lorem dictum, elementum lacus eget, lacinia nulla.</p>
             </section>
 
             <!-- Container For Content And Sidebar -->
-            <div class = "flex-container">
+            <div class = "flex-container wrapper">
 
                 <!-- Projects (Content) -->
                 <section class = "content">
@@ -62,7 +66,7 @@
 
             <!-- Footer -->
             <footer class = "footer">
-                Footer
+                Made by Nick Bartlett, 2023.
             </footer>
 
         </main>
