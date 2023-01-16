@@ -1,53 +1,43 @@
-body {
-    background-color: #cfcfcc;
-    text-align: center;
+main, header, section, aside, footer {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #000000;
+    color: #ffffff;
 }
 
-p, a, h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+main {
+    background: #000000;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-a {
-    text-decoration: none;
+.header {
+    background: #03a9f4;
 }
 
-.title {
-    display: inline;
-    padding: 5px;
-    margin: 4px 2px 12px 2px;
-}
-
-.nav {
-    display: flex;
-    background-color: white;
-    margin: 4px 2px 4px 2px;
-}
-
-.nav-item {
-    padding: 2px;
-    margin: 10px;
-    font-size: 20px;
-}
-
-.page {
-    display: flex;
-    margin: 4px 2px 4px 2px;
-
-}
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-left: 4px;
-    padding: 5px;
-    width: 30%;
+.hero {
+    background: #d22b1f;
 }
 
 .content {
-    background-color: white;
-    display: flex;
-    flex: 1 0 auto;
-    width: 70%;
-    padding: 5px;
+    background: #129a22;
+    flex: 1;
+}
 
+.sidebar {
+    background: #673ab7;
+    border: 1px solid #000000;
+    flex: 0 1 300px;
+}
+
+.footer {
+    background: #616161;
+    border: 1px solid #000000;
+}
+
+@media screen and (min-width: 640px) {
+    .flex-container {
+        display: flex; 
+    }
 }
