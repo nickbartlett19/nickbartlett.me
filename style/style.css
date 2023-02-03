@@ -24,16 +24,13 @@ a {
 }
 
 .content {
-    background: #129a22;
+    /* background: #129a22; */
     flex: 1;
-    border-radius: 10px 0px 0px 10px;
 }
 
 .sidebar {
-    background: #673ab7;
-    border: 1px solid #000000;
+    /* background: #673ab7; */
     flex: 0 1 300px;
-    border-radius: 0px 10px 10px 0px;
 }
 
 .footer {
