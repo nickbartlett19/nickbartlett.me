@@ -1,26 +1,158 @@
-header, section, aside, footer {
+/* ------------- */
+
+/* basic styling */
+
+* {
+    /* box-sizing: border-box; */
+    padding: 0;
     margin: 0;
-    padding: 20px;
-    /* border: 1px solid #000000; */
-    
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    padding: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header, section, aside, footer {
+    margin: 0; 
+    padding: 20px; 
 }
 
 header, footer {
     color: #ffffff;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.header {
     background: #112d4e;
 }
 
+.menu,
+.submenu {   
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+/* ------------- */
+
+/* mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+/* ------------- */
+
+/* tablet menu */
+@media all and (min-width: 700px) {
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+
+/* ------------- */
+
+/* desktop menu */
+
+@media all and (min-width: 960px) {
+
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+}
+
+/* ------------- */
+
+/* other styling */
+
+/* .logo, .item {
+    padding: 5px;
+}
+
+.logo {
+    font-size: 20px;
+} */
+
 .hero {
     background: #dbe2ef;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 50px 0px;
 }
 
 .content {
@@ -33,13 +165,8 @@ a {
     flex: 0 1 300px;
 }
 
-.footer {
-    background: #112d4e;
-    /* border: 1px solid #000000; */
-}
-
 .hero-wrapper {
-    margin: auto;
+    /* margin: auto; */
     max-width: 75rem;
 }
 

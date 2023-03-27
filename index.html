@@ -1,53 +1,37 @@
-<!--
-    ToDo:
-    1) Fix downloading my resume as pdf on mobile ... make into webpage format for
-    for mobile only?
-    2) Slim code
-    
-    Ideas:
-    - Animation on nav buttons?
--->
-
-
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width"/>
-        <meta name="description" content="The personal website of Nick Bartlett, a software developer based in Concord, Massachusetts.">
+        <meta name="description" content="The personal website of Nick Bartlett, a software developer based in Boston, Massachusetts.">
         <meta name="author" content="Nick Bartlett">
-        <title>nickbartlett.me</title>
+        <title>Nick Bartlett | Software Developer</title>
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
         <link rel="stylesheet" href="style/style.css">
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">    </head>
 
     <body>
 
-        <!-- 
-            Nav Elements: Resume, Github, Linkedin, email
-        -->
-
         <!-- Main -->
         <main>
-
-
+            
             <!-- Header -->
-            <header class = "header">
-                Nick Bartlett
+            <header>
                 <nav>
-                    <ul>
-                        <li><a href = "resume/current.pdf">Resume</a></li>
-                        <li><a href = "https://github.com/nickbartlett19">Github</a></li>
-                        <li><a href = "https://www.linkedin.com/in/nick-bartlett-607941172/">LinkedIn</a></li>
-                        <li><a href = "mailto:nickbartlett19@gmail.com">Contact</a>
-                        </li>
+                    <ul class="menu">
+                        <li class="logo"><a href="#">Nick Bartlett</a></li>
+                        <li class="item"><a href = "resume/current.pdf">Resume</a></li>
+                        <li class="item"><a href = "https://github.com/nickbartlett19">Github</a></li>
+                        <li class="item"><a href = "https://www.linkedin.com/in/nick-bartlett-607941172/">LinkedIn</a></li>
+                        <li class="item"><a href = "mailto:nickbartlett19@gmail.com">Contact</a></li>
+                        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
             </header>
 
             <!-- About (Hero) -->
             <section class = "hero hero-wrapper">
-                Hero
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nisl laoreet, scelerisque nisl nec, ullamcorper libero. Praesent in accumsan dolor. Integer gravida feugiat nisi id gravida. Integer sed nunc eget est eleifend auctor. Maecenas et nisi ac tortor volutpat fermentum. Nullam at tellus non massa tempor scelerisque. Aliquam sit amet venenatis lectus, in volutpat risus. Curabitur lobortis mollis libero eu vehicula. Etiam congue eget est sit amet suscipit. Sed gravida diam sit amet odio volutpat, nec vehicula dui aliquam. Etiam ut lorem dictum, elementum lacus eget, lacinia nulla.</p>
+                <h1> Hi, I'm Nick, A Software Developer Based In Boston. </h1>
             </section>
 
             <!-- Container For Content And Sidebar -->
@@ -67,12 +51,15 @@
             </div>
 
             <!-- Footer -->
-            <footer class = "footer">
+            <footer>
                 Made by Nick Bartlett, 2023.
             </footer>
 
         </main>
-     
+
+        <!-- add JS -->
+        <script src="scripts/script.js"></script>
+
     </body>
 
 </html>
