@@ -22,6 +22,11 @@ a {
     text-decoration: none;
 }
 
+h3, h4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 header, section, aside, footer {
     margin: 0; 
     padding: 20px; 
@@ -30,6 +35,25 @@ header, section, aside, footer {
 header, footer {
     color: #ffffff;
     background: #112d4e;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.flex {
+    display: flex; 
 }
 
 .menu,
@@ -104,6 +128,7 @@ header, footer {
         text-align: right;
         order: 2;
     }
+}
 
 /* ------------- */
 
@@ -160,8 +185,7 @@ header, footer {
     flex: 1;
 }
 
-.sidebar {
-    /* background: #673ab7; */
+aside {
     flex: 0 1 300px;
 }
 
