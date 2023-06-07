@@ -3,14 +3,21 @@
 /* basic styling */
 
 * {
-    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
 }
 
+/* html, body {
+    margin: 0px;
+    height: 100%;
+} */
+
 body {
     font-family: sans-serif;
     font-size: 16px;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -39,17 +46,7 @@ header, footer {
 
 footer {
     text-align: center;
-    bottom: 0;
-    display: block;
-    position: absolute;
-    width: 100%;
-}
-
-.profile {
-    border-radius: 50%;
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
+    margin-top: auto;
 }
 
 .flex {
@@ -167,13 +164,6 @@ footer {
 
 /* other styling */
 
-/* .logo, .item {
-    padding: 5px;
-}
-
-.logo {
-    font-size: 20px;
-} */
 
 .hero {
     background: #dbe2ef;
@@ -183,6 +173,13 @@ footer {
 .content {
     /* background: #129a22; */
     flex: 1;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
 }
 
 aside {
