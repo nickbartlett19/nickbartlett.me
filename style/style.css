@@ -7,7 +7,6 @@
 
 body {
     font-family: sans-serif;
-    font-size: 16px;
     min-height:100vh;
     display: flex;
     flex-direction: column;
@@ -22,7 +21,7 @@ h3, h4 {
     text-align: center;
 }
 
-.header, section, .aside, .footer {
+.header, section, .aside, .footer, .content {
     margin: 0; 
     padding: 20px; 
 }
@@ -35,6 +34,33 @@ h3, h4 {
 .footer {
     text-align: center;
     margin-top: auto;
+}
+
+.hero {
+    background: #dbe2ef;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.content {
+    /* background: #129a22; */
+    flex: 1;
+}
+
+.aside {
+    /* background: red; */
+    flex: 0 1 300px;
+}
+
+.hero-wrapper {
+    /* margin: auto; */
+    max-width: 75rem;
+}
+
+.wrapper {
+    /* margin: auto; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 75rem;
 }
 
 .menu,
@@ -148,38 +174,11 @@ h3, h4 {
 
 /* other styling */
 
-
-.hero {
-    background: #dbe2ef;
-    border-radius: 0px 0px 50px 0px;
-}
-
-.content {
-    /* background: #129a22; */
-    flex: 1;
-}
-
 .headshot {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin-right: 20px;
-}
-
-.aside {
-    flex: 0 1 300px;
-}
-
-.hero-wrapper {
-    /* margin: auto; */
-    max-width: 75rem;
-}
-
-.wrapper {
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    max-width: 75rem;
 }
 
 @media screen and (min-width: 640px) {
