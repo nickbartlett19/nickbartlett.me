@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
 
@@ -66,6 +66,8 @@ h3, h4 {
 .menu,
 .submenu {   
     list-style-type: none;
+    /* color: white; */
+
 }
 
 .logo {
@@ -99,6 +101,10 @@ h3, h4 {
 .menu li a {
     display: block;
     padding: 15px 5px;
+}
+
+.menu a {
+    color: white;
 }
 
 .toggle {
