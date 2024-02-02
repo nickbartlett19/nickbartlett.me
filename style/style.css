@@ -35,20 +35,28 @@ h3, h4 {
     margin-top: auto;
 }
 
-.hero {
+.hero-left {
+    flex: 2 1;
+
     background: #dbe2ef;
-    border-radius: 0px 0px 50px 0px;
-    max-width: 800px;
+    border-radius: 0px 0px 20px 0px;
     padding: 5px;
 
+    color:black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-right {
+    flex: 1 1;
 }
 
 .content {
-    flex: 2 1 400px;
+    flex: 2 1;
 }
 
 .aside {
-    flex: 1 1 300px;
+    flex: 1 1;
 }
 
 .wrapper {
