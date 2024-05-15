@@ -52,28 +52,13 @@ nav {
     margin-top: auto;
 }
 
-.hero-left {
-    flex: 2 1;
+.hero {
     background-color: #C7B7A3;
-    /* opacity: 0.5; */
-    border-radius: 0px 0px 20px 0px;
+    border-radius: 0px 0px 20px 20px;
     padding: 5px;
-    background: rgb(2125, 98, 57);
-    background: rgba(125, 98, 57, 0.5);
-
     color:#291901;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
-}
-
-.hero-text {
-    color:black;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.hero-right {
-    flex: 1 1;
 }
 
 .content {
@@ -215,6 +200,12 @@ nav {
     display: flex; 
 }
 
+.flex-ctr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -226,4 +217,8 @@ nav {
 
 .justify-ctr {
     justify-content: center;
+}
+
+.text-ctr {
+    text-align: center;
 }
