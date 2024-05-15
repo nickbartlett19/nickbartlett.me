@@ -13,41 +13,33 @@ body {
     background-color: white;
 
     color: #291901;
+    font-family: "Prata", serif;
+    font-style: normal;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-h3, h4 {
+h1, h3, h4 {
     text-align: center;
 }
 
-header, section, .aside, .footer, .content {
+header, section, .aside, footer, .content {
     margin: 0; 
     padding: 20px; 
 }
 
-header, .footer {
+header, footer {
     color: #e0ccad;
     background: #291901;
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
-nav {
-
-}
-
-.prata-regular {
-    font-family: "Prata", serif;
-        /* font-weight: 400; */
-    font-style: normal;
-}
-
-.footer {
+footer {
     text-align: center;
     margin-top: auto;
 }
@@ -59,10 +51,6 @@ nav {
     color:#291901;
     font-size: 24px;
     font-weight: bold;
-}
-
-.content {
-    flex: 2 1;
 }
 
 .aside {
@@ -78,16 +66,15 @@ nav {
 
 .menu {   
     list-style-type: none;
-    /* color: white; */
+}
+
+.menu-item {
+    padding: 10px;
 }
 
 .logo {
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
-}
-
-.menu-item {
-    padding: 10px;
 }
 
 .item.button {
@@ -112,26 +99,29 @@ nav {
     padding: 15px 5px;
 }
 
-.menu a {
-    color: #e0ccad;
-}
-
 
 .toggle {
-    order: 1;
     font-size: 20px;
 }
 
-.item {
-    order: 2;
-    width: 100%;
-    text-align: center;
-    display: none;
-}
 
-/* .active, .item {
-    display: block;
-} */
+/* desktop menu */
+@media all and (min-width: 960px) {
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
 
 /* tablet menu */
 @media all and (min-width: 700px) {
@@ -150,50 +140,6 @@ nav {
     }
 }
 
-/* desktop menu */
-
-@media all and (min-width: 960px) {
-    .menu {
-        align-items: flex-start;     
-        flex-wrap: nowrap;
-        background: none;
-    }
-
-    .logo {
-        order: 0;
-    }
-
-    .item {
-        order: 1;
-        position: relative;
-        display: block; 
-        width: auto;
-    }
-
-    .button {
-        order: 2;
-    }
-
-    .toggle {
-        display: none;
-    }
-}
-
-/* other styling */
-
-.headshot {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-}
-
-@media screen and (min-width: 640px) {
-    .flex-container {
-        display: flex; 
-    }
-}
-
 /* useful classes*/
 
 .flex {
@@ -209,6 +155,14 @@ nav {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 .align-ctr {
