@@ -12,6 +12,8 @@ body {
     flex-direction: column;
     background-color: white;
 
+    /* max-width: 800px; */
+
     color: #291901;
     font-family: "Prata", serif;
     font-style: normal;
@@ -26,6 +28,10 @@ h1, h3, h4 {
     text-align: center;
 }
 
+nav, main {
+    max-width: 1200px;
+}
+
 header, section, .aside, footer, .content {
     margin: 0; 
     padding: 20px; 
@@ -37,6 +43,7 @@ header, footer {
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
 }
 
 footer {
@@ -66,6 +73,7 @@ footer {
 
 .menu {   
     list-style-type: none;
+    margin-left: 100%;
 }
 
 .menu-item {
@@ -169,6 +177,11 @@ aside {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-grow-2 {
