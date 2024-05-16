@@ -104,14 +104,23 @@ footer {
     font-size: 20px;
 }
 
+.hide {
+    display: none;
+}
+
+article {
+    flex: 2 1;
+}
+
+aside {
+    flex: 1 1;
+}
+
+@media all and (max-width: 700px) {
+}
 
 /* desktop menu */
 @media all and (min-width: 960px) {
-    section {
-        display: flex;
-        flex-direction: row;
-    }
-
     .menu {
         align-items: flex-start;     
         flex-wrap: nowrap;
@@ -125,6 +134,11 @@ footer {
 
 /* tablet menu */
 @media all and (min-width: 700px) {
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
     .menu {
         justify-content: center;
     }
