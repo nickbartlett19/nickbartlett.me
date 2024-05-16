@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,6 +31,7 @@ h1, h3, h4 {
 
 nav, main {
     max-width: 1200px;
+    width: 100%
 }
 
 header, section, .aside, footer, .content {
@@ -60,20 +62,10 @@ footer {
     font-weight: bold;
 }
 
-.aside {
-    flex: 1 1;
-}
-
-.wrapper {
-    /* margin: auto; */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    max-width: 75rem;
-}
 
 .menu {   
     list-style-type: none;
-    margin-left: 100%;
+    float: right;
 }
 
 .menu-item {
@@ -83,6 +75,7 @@ footer {
 .logo {
     font-size: 20px;
     padding: 7.5px 10px 7.5px 0;
+    float: left;
 }
 
 .item.button {
