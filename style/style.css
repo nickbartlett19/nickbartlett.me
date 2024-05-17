@@ -1,5 +1,4 @@
 /* basic styling */
-
 * {
     padding: 0;
     margin: 0;
@@ -12,9 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
-
-    /* max-width: 800px; */
-
     color: #291901;
     font-family: "Prata", serif;
     font-style: normal;
@@ -34,7 +30,7 @@ nav, main {
     width: 100%
 }
 
-header, section, .aside, footer, .content {
+header, section, footer {
     margin: 0; 
     padding: 20px; 
 }
@@ -78,16 +74,7 @@ footer {
     float: left;
 }
 
-.item.button {
-    padding: 9px 5px;
-}
-
-.item:not(.button) a:hover,
-.item a:hover::after {
-    color: #ccc;
-}
-
-/* mobile menu */
+/* mobile */
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -100,13 +87,8 @@ footer {
     padding: 15px 5px;
 }
 
-
 .toggle {
     font-size: 20px;
-}
-
-.hide {
-    display: none;
 }
 
 article {
@@ -117,10 +99,7 @@ aside {
     flex: 1 1;
 }
 
-@media all and (max-width: 700px) {
-}
-
-/* desktop menu */
+/* desktop */
 @media all and (min-width: 960px) {
     .menu {
         align-items: flex-start;     
@@ -133,7 +112,7 @@ aside {
     }
 }
 
-/* tablet menu */
+/* tablet */
 @media all and (min-width: 700px) {
     section {
         display: flex;
@@ -155,7 +134,7 @@ aside {
     }
 }
 
-/* useful classes*/
+/* flex classes*/
 
 .flex {
     display: flex; 
@@ -195,4 +174,10 @@ aside {
 
 .text-ctr {
     text-align: center;
+}
+
+/* useful classes */
+
+.hide {
+    display: none;
 }
