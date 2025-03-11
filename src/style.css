@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+
+.horizontal-line {
+    height:0px;
+    width: auto;
+    border-top: 1px black solid;
+}
