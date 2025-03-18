@@ -1,3 +1,3 @@
 import '/src/style.css'
 
-// test
+let testVar = 1;
