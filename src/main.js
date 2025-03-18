@@ -1,3 +1,1 @@
-import '/src/style.css'
-
-let testVar = 1;
+import '/src/style.css';
