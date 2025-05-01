@@ -4,7 +4,4 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  assetsInclude: [
-    '**/*.pdf',
-  ],
 })
