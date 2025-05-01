@@ -1,6 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/resume/:asset*", "destination": "https://nickbartlett.me/pdf/resume.pdf:asset*" },
-      { "source": "/(.*)", "destination": "/" }
-    ]
-  }
